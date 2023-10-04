@@ -1,6 +1,5 @@
-FROM debian:stable-slim
+FROM docker:latest
 
-#RUN apt-get update && apt-get install -y \
-#    test \
-#    test \
-# && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+    git \
+ && rm -rf /var/lib/apt/lists/*
